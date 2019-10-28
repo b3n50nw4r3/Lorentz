@@ -1,0 +1,15 @@
+<mat-card>
+    <mat-card-title>Lorentz-Calculo</mat-card-title>
+    <mat-card-subtitle>Se seu irmão gêmio saiu voando em um foguete no dia de seu nascimento, em uma certa velocidade (que é em escala da veocidade da luz e tem que ser menor do que 1, pois nada pode se mover a velocidade da luz. 1 é igual a velocidade da luz e 0,9 é igual a 90% dessa velocidade), descubra quantos anos ele terá quando você tiver uma certa idade</mat-card-subtitle>
+    <mat-card-content>
+        <form>
+            <mat-form-field class="full-width">
+                <input matInput placeholder="Velocidade do irmão(em velocidade da luz)" type="number" [ngModelOptions]="{standalone: true}" [(ngModel)]="Velocidade" (input)="Calcular()">
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput placeholder="Sua idade (em anos)" type="number" [(ngModel)]="Idade" [ngModelOptions]="{standalone: true}" (input)="Calcular()">
+            </mat-form-field>
+        </form>
+    </mat-card-content>
+    <mat-card-footer *ngIf="Pattern > 0">{{Pattern}} ano/s <br><br>{{Resposta1}} ano/s, <br>{{Resposta2}} mes/es, <br>{{Resposta3}} dia/s, <br>{{Resposta4}} hora/s, <br>{{Resposta5}} minuto/s, <br>{{Resposta6}} segundo/s,</mat-card-footer>
+</mat-card>

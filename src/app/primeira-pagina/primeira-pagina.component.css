@@ -1,0 +1,28 @@
+mat-card{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    height: 89%;
+    background-color: #F5F5F5;
+}
+
+mat-card-footer{
+    font-size: 20px;
+    margin-left: 1%;
+    margin-bottom: 1%;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+form{
+    min-width: 150px;
+    max-width: 500px;
+}
+
+mat-card-footer{
+    word-wrap: break-word;
+    margin-left: 5%;
+    font-size: 18px;
+}
